@@ -122,10 +122,10 @@
                   <div class="mt-6 flow-root">
                      <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="space-y-2 py-6">
-                           <a href="#portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Portfolio</a>
-                           <a href="#services" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
-                           <a href="#company" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
-                           <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
+                           <a href="#portfolio" id="portfolioMobileLink" class= "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Portfolio</a>
+                           <a href="#services" id="servicesMobileLink" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
+                           <a href="#company" id="companyMobileLink" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                           <a href="#contact" id="contactMobileLink" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
                         </div>
                         <div class="py-6">
                            <a href="#company" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
@@ -504,6 +504,7 @@
 <script type="text/javascript">
    document.addEventListener("DOMContentLoaded", function() {
      // Get the button and menu elements
+     var portfolioMobileLink = document.querySelector("#portfolioMobileLink");
      var closeMenuButton = document.querySelector("#closeMenuButton");
      var openMenuButton  = document.querySelector("#openMenuButton");
      var mobileMenu      = document.querySelector("#mobilemenu");
@@ -515,6 +516,26 @@
      });
 
      openMenuButton.addEventListener("click", function() {
+       // Toggle the 'hidden' class to show/hide the menu
+       mobileMenu.classList.toggle("hidden");
+     });
+
+     portfolioMobileLink.addEventListener("click", function() {
+       // Toggle the 'hidden' class to show/hide the menu
+       mobileMenu.classList.toggle("hidden");
+     });
+
+     servicesMobileLink.addEventListener("click", function() {
+       // Toggle the 'hidden' class to show/hide the menu
+       mobileMenu.classList.toggle("hidden");
+     });
+
+     companyMobileLink.addEventListener("click", function() {
+       // Toggle the 'hidden' class to show/hide the menu
+       mobileMenu.classList.toggle("hidden");
+     });
+
+     contactMobileLink.addEventListener("click", function() {
        // Toggle the 'hidden' class to show/hide the menu
        mobileMenu.classList.toggle("hidden");
      });
