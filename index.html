@@ -141,7 +141,7 @@
             </div>
             <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-32">
                <div class="text-center">
-                  <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Crafting Stunning Websites for Small Businesses. </h1>
+                  <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Crafting stunning websites for small businesses. </h1>
                   <p class="mx-auto max-w-2xl mt-6 text-lg leading-8 text-gray-600">From the seaside town of Palm Coast, Florida, <span class="text-indigo-600 font-bold">Seaside Code</span> creates lightning fast, proudly unique websites to represent your small business online.</p>
                   <div class="mt-10 flex items-center justify-center gap-x-6">
                      <a href="#contact" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
@@ -351,7 +351,7 @@
             </div>
          </form>
       </div>
-      <div class="sticky">
+      <div class="sticky-bottom">
          <svg class="fish" id="fish">
             <path
                id="fish5"
@@ -383,60 +383,67 @@
    </body>
 </html>
 <style media="screen">
-   .sticky {
-   position: fixed;
-   bottom: 0px;
-   width: 100%;
+   .sticky-bottom {
+     position: fixed;
+     bottom: 0px;
+     width: 100%;
+   }
+   @media and (max-width: 768px) { /* Target only devices below 600px */
+     .sticky-top {
+       position: fixed;
+       top: 0;
+       z-index: 9999;
+     }
    }
    svg#fish {
-   top: 3em;
+     top: 3em;
    }
    /* Fish Animation */
    svg.fish{
-   overflow:visible;
+     overflow:visible;
    }
    @-webkit-keyframes swim
    {
-   0% {margin-left: -235px}
-   90% {margin-left: 100%;}
-   100% {margin-left: 100%;}
+     0% {margin-left: -235px}
+     90% {margin-left: 100%;}
+     100% {margin-left: 100%;}
    }
    @keyframes swim
    {
-   0% {margin-left: -235px}
-   70% {margin-left: 100%;}
-   100% {margin-left: 100%;}
+     0% {margin-left: -235px}
+     70% {margin-left: 100%;}
+     100% {margin-left: 100%;}
    }
    .fish{
-   width: 235px;
-   height: 104px;
-   margin-left: -235px;
-   position: absolute;
-   animation: swim 20s;
-   -webkit-animation: swim 20s;
-   animation-iteration-count: infinite;
-   -webkit-animation-iteration-count: infinite;
-   animation-timing-function: linear;
-   -webkit-animation-timing-function: linear;
-   }
-   svg #fish1,
-   svg #fish2,
-   svg #fish3,
-   svg #fish4,
-   svg #fish5,
-   svg #fish6 {
-   fill:#f66596;
-   -moz-animation: bounce 2s infinite;
-   -webkit-animation: bounce 2s infinite;
-   animation: bounce 2s infinite;
+     width: 235px;
+     height: 104px;
+     margin-left: -235px;
+     position: absolute;
+     animation: swim 20s;
+     -webkit-animation: swim 20s;
+     animation-iteration-count: infinite;
+     -webkit-animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     -webkit-animation-timing-function: linear;
+     }
+     svg #fish1,
+     svg #fish2,
+     svg #fish3,
+     svg #fish4,
+     svg #fish5,
+     svg #fish6 {
+     fill:#f66596;
+     -moz-animation: bounce 2s infinite;
+     -webkit-animation: bounce 2s infinite;
+     animation: bounce 2s infinite;
    }
    svg #fish2{
-   animation-delay: 0.5s;
-   -webkit-animation-delay: 0.5s;
+     animation-delay: 0.5s;
+     -webkit-animation-delay: 0.5s;
    }
    svg #fish3{
-   animation-delay: 0.2s;
-   -webkit-animation-delay: 0.2s;
+     animation-delay: 0.2s;
+     -webkit-animation-delay: 0.2s;
    }
    svg #fish4{
    animation-delay: 0.4s;
